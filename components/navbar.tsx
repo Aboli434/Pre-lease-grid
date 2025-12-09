@@ -66,8 +66,18 @@ export default function Navbar() {
             List Property
           </button>
 
-          <button className="bg-red-100 p-3 rounded-full md:hidden flex-shrink-0">
-            <Menu size={22} className="text-red-600" />
+          
+          <button
+            className="
+              w-12 h-12
+              rounded-full
+              bg-[#FFE5E5]     /* light soft red */
+              border border-[#FCA5A5]  /* soft red border */
+              flex items-center justify-center
+              flex-shrink-0
+            "
+          >
+            <Menu size={22} className="text-red-600" /> 
           </button>
         </div>
       </div>
