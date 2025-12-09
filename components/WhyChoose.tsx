@@ -55,13 +55,13 @@ export default function WhyChoose() {
         </div>
 
         {/* RIGHT FEATURES */}
-        <div className="flex flex-col gap-14 w-[600px]">
+        <div className="flex flex-col gap-7 w-[600px]">
 
           {features.map((item, index) => {
             const Icon = item.icon;
 
             return (
-              <div key={index} className="flex items-start gap-6">
+              <div key={index} className="flex items-start gap-9">
 
                 {/* ICON BOX */}
                 <div className="w-14 h-14 bg-red-600 rounded-md flex items-center justify-center flex-shrink-0">
@@ -80,7 +80,7 @@ export default function WhyChoose() {
 
                   {/* DIVIDER */}
                   {index < features.length - 1 && (
-                    <div className="w-full h-[1px] bg-gray-300 mt-6" />
+                    <div className="w-full h-[1px]  bg-black mt-6" />
                   )}
                 </div>
               </div>
@@ -88,11 +88,12 @@ export default function WhyChoose() {
           })}
 
           {/* BUTTON */}
-          <div className="pt-4">
-            <button className="bg-red-600 text-white text-lg font-semibold px-10 py-3 rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:bg-red-700 transition">
-              Explore more
-            </button>
-          </div>
+<div className="pt-1 flex justify-center">
+  <button className="bg-red-600 text-white text-lg font-semibold px-10 py-3 rounded-md shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:bg-red-700 transition">
+    Explore more
+  </button>
+</div>
+
 
         </div>
       </div>
