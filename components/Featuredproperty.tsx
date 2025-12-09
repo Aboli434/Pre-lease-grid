@@ -67,7 +67,7 @@ export default function PropertyGrid() {
   );
 }
 
-function PropertyCard({ data }) {
+function PropertyCard({ data }: { data: any }) {
   return (
     <div className="bg-white rounded-2xl shadow-[0_4px_18px_rgba(0,0,0,0.08)] overflow-hidden border border-gray-200 w-full">
 

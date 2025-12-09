@@ -13,7 +13,7 @@ const cities = [
   "New Delhi",
 ];
 
-export default function CityPreferenceSection(): JSX.Element {
+export default function CityPreferenceSection() {
   const [selected, setSelected] = useState("Pune");
 
   return (
