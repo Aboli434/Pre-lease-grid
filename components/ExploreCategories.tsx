@@ -10,10 +10,10 @@ interface CategoryCardProps {
 }
 
 const categories: CategoryCardProps[] = [
-  { title: "Residential", img: "/images/residential.jpg", count: 26 },
-  { title: "Industrial", img: "/images/industrial.jpg", count: 26 },
-  { title: "Commercial", img: "/images/commercial.jpg", count: 26 },
-  { title: "Others", img: "/images/others.jpg", count: 26 },
+  { title: "Residential", img: "/images/residentail.jpeg", count: 26 },
+  { title: "Industrial", img: "/images/industrial.jpeg", count: 26 },
+  { title: "Commercial", img: "/images/commercial.jpeg", count: 26 },
+  { title: "Others", img: "/images/others.jpeg", count: 26 },
 ];
 
 export default function CategoryCards() {
@@ -23,24 +23,25 @@ export default function CategoryCards() {
         Explore all Categories
       </h2>
 
-      <div className="flex gap-8">
+      {/* Reduced gap between cards */}
+      <div className="flex gap-4">
         {categories.map((cat, index) => (
           <div
             key={index}
             className="
-              w-[330px]             
+              w-[300px]             
               bg-white
               rounded-xl
               overflow-hidden
               border border-gray-200
               shadow-[0_12px_25px_-10px_rgba(0,0,0,0.15)]
-              min-h-[280px]   
+              min-h-[280px]
             "
           >
             {/* IMAGE */}
-            <div className="relative h-[220px] w-full">  
+            <div className="relative h-[200px] w-full">
               <Image src={cat.img} alt={cat.title} fill className="object-cover" />
-              <p className="absolute top-4 left-4 text-white text-xl font-semibold drop-shadow-lg">
+              <p className="absolute top-4 left-4 text-white text-2xl font-semibold drop-shadow-lg">
                 {cat.title}
               </p>
             </div>
@@ -63,11 +64,11 @@ export default function CategoryCards() {
 
               <Button
                 className="
-                  rounded-full
+                  rounded-md
                   bg-red-600 hover:bg-red-700 
                   text-white
                   px-5 py-2
-                  text-sm
+                  text-md
                   shadow-none
                 "
               >

@@ -24,8 +24,8 @@ export default function CityPreferenceSection() {
         <div
           className="
             w-full max-w-5xl mx-auto p-14 rounded-3xl
-            bg-white/10
-            backdrop-blur-xl
+            bg-white/50
+            backdrop-blur-4xl
             border border-white/30
             shadow-[0_8px_32px_rgba(31,38,135,0.1)]
           "
